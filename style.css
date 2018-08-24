@@ -1,0 +1,16 @@
+
+
+.button {
+    border-radius: 5px;
+    border: black solid 1px;
+
+}
+
+h1 {
+    font: 15px;
+}
+
+#search-bar {
+    margin: 1.5em;
+    width: 80%;
+}
