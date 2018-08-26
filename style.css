@@ -1,16 +1,37 @@
-
-
 .button {
     border-radius: 5px;
     border: black solid 1px;
 
 }
 
-h1 {
-    font: 15px;
+#header {
+    font: 15pt;
+    text-align: center;
+    padding: 1em 0em 1em 0em;
+    font-family: 'Crimson Text', serif;
 }
 
-#search-bar {
-    margin: 1.5em;
-    width: 80%;
+#query {
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+
 }
+
+#button-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+#search {
+    margin-right: 2em;
+    
+}
+
+a {
+    color: black;
+}
+
