@@ -1,42 +1,94 @@
-.button {
+#search {
     border-radius: 5px;
     border: black solid 1px;
-}
-
-.body {
-    background-color: #fbc531;
-}
-
-#header {
+    display: inline-block;
+    margin-right: 2em;
+    text-align: center;
+    font-family: Dosis;
+    letter-spacing: 2px;
+  }
+  
+  #button-random {
+    border-radius: 5px;
+    border: black solid 1px;
+    display: inline-block;
+    margin-left: 1em;
+    font-family: Dosis;
+    letter-spacing: 2px;
+  }
+  
+  #button-random a {
+    color: black;
+  }
+  
+  .body {
+    background: #beccc2;
+  }
+  
+  #header {
     font: 15pt;
     text-align: center;
     padding: 1em 0em 1em 0em;
-    font-family: 'Crimson Text', serif;
-}
-
-#query {
-    margin-bottom: 2em;
+    font-family: "Dosis", sans-serif;
+    letter-spacing: 0.2em;
+    padding-bottom: 0px;
+  }
+  
+  #query {
+    margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
-    width: 90%;
-}
-
-#button-wrap {
+    width: 50%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-indent: 1em;
+  }
+  
+  #button-wrap {
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-#search {
+    margin-left: 2em;
+  }
+  
+  #button-search {
     margin-right: 2em;
-}
-
-#random-article{
-    margin-right: 2em;
-}
-
-a {
+    font-family: Dosis;
+    font-weight: bold;
+  }
+  
+  #random-article {
+  }
+  
+  #res {
+    justify-content: center;
+    display: table;
+    margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+  }
+  
+  #res #resultdiv {
+    background: #fff;
+    font-family: "Dosis", sans-serif;
+    font-weight: 100;
+    padding: 10px 45px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    display: inline-block;
+    margin: 20px;
+    border-bottom: 1px solid;
+    border-radius: 5px;
+    color: #777;
+    text-align: center;
+  }
+  
+  #resultdiv p{
     color: black;
-}
-
+  }
+  
+  
