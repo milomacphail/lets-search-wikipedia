@@ -1,7 +1,10 @@
 .button {
     border-radius: 5px;
     border: black solid 1px;
+}
 
+.body {
+    background-color: #fbc531;
 }
 
 #header {
@@ -18,7 +21,6 @@
     display: flex;
     justify-content: center;
     width: 90%;
-
 }
 
 #button-wrap {
@@ -28,7 +30,10 @@
 
 #search {
     margin-right: 2em;
-    
+}
+
+#random-article{
+    margin-right: 2em;
 }
 
 a {

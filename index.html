@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>
-                Let's Search Wikipedia Together
-            </title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        </head>
-        
-        <body>
-            <div class="homepage">
-            <div class="container-fluid">
-                <h1 id="header">Let's Search Wikipedia Together</h1>
+<html>
+
+<head>
+    <script src="https://cdn.lr-ingest.io/LogRocket.min.js" crossorigin="anonymous"></script>
+    <script>window.LogRocket && window.LogRocket.init('u2chmh/portfolio-dev');</script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Let's Search Wikipedia Together
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+    <div class="homepage">
+        <div class="container-fluid">
+            <h1 id="header">Let's Search Wikipedia Together</h1>
             <div id="search-wrapper">
-            <form action ="javascript:void(0);" class="search-form container-fluid " id="search-form">
-            <input type="text" name="query" id="query" placeholder="Search Wikipedia">
-            
-            <div id="button-wrap">
-            <button class="button btn result-button" id="search">
-                Search
-            </button>    
-                <a class="button btn" id="random-article" href="http://en.wikipedia.org/wiki/Special:Random" target="_blank">Gimme Something Unexpected</a>
-               </div>
-             </div>
+                <form action="javascript:void(0);" class="search-form container-fluid " id="search-form">
+                    <input type="text" name="query" id="query" placeholder="Search Wikipedia">
+
+                    <div id="button-wrap">
+                        <button class="button btn result-button" id="search">
+                            Search
+                        </button>
+                        <a class="button btn result-button" id="random-article" href="http://en.wikipedia.org/wiki/Special:Random"
+                            target="_blank">I Like to Live Dangerously</a>
+                    </div>
             </div>
-        </form>
         </div>
-            
-            <div class="container">
-                <div id="res">
-                </div>
-            </div>
-    </body>
-        
+        </form>
+    </div>
+    <div class="container">
+        <div id="res">
+        </div>
+    </div>
+</body>
+
 </html>
