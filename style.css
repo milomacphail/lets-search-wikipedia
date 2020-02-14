@@ -1,7 +1,7 @@
 body {
   font-family: 'Rubik', sans-serif;
   box-sizing: border-box;
-  background: #DCBE87;
+  background: #ccc;
   height: 100vh;
 }
 
@@ -17,7 +17,7 @@ body {
   padding: 20px;
 }
 
-#searchBar {
+#search {
   height: 50px;
   text-align: center;
   width: 600px;
@@ -38,7 +38,7 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-  #searchBar {
+  #search {
       width: 300px;
       font-size: 25px;
       margin: 0 auto;
@@ -87,7 +87,7 @@ body {
   transition-duration: 1s;
 }
 
-#searchResults {
+#results {
   list-style: none;
   width: 100%;
   margin: 0 auto;
@@ -120,20 +120,8 @@ body {
 }
 
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color:#919191;
   opacity: 1;
-  /* Firefox */
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #ddd;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #ddd;
 }
 
 .alert {
