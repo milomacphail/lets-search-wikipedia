@@ -1,94 +1,142 @@
-#search {
-    border-radius: 5px;
-    border: black solid 1px;
-    display: inline-block;
-    margin-right: 2em;
-    text-align: center;
-    font-family: Dosis;
-    letter-spacing: 2px;
+body {
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+  background: #DCBE87;
+  height: 100vh;
+}
+
+.title {
+  font-weight: 200;
+}
+
+.wikiSearch {
+  display: block;
+  margin: 0 auto 25px;
+  width: 800px;
+  text-align: center;
+  padding: 20px;
+}
+
+#searchBar {
+  height: 50px;
+  text-align: center;
+  width: 600px;
+  font-weight: 100;
+  font-size: 50px;
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 100;
+  color: #919191;
+  padding: 50px;
+  box-sizing: border-box;
+  outline: none;
+  border: 3px solid #919191;
+  border-radius: 5px;
+  background: transparent;
+  margin: 20px auto;
+  transition: border-bottom 0.5s ease;
+}
+
+@media screen and (max-width: 420px) {
+  #searchBar {
+      width: 300px;
+      font-size: 25px;
+      margin: 0 auto;
   }
-  
-  #button-random {
-    border-radius: 5px;
-    border: black solid 1px;
-    display: inline-block;
-    margin-left: 1em;
-    font-family: Dosis;
-    letter-spacing: 2px;
+  #wikiSearch {
+      width: 360px;
   }
-  
-  #button-random a {
-    color: black;
+  #spontaneous {
+      margin-top: 20px;
   }
-  
-  .body {
-    background: #beccc2;
+  .fa-3x {
+      font-size: 2em !important;
   }
+}
+
+#submitBtn {
+  background: transparent;
+  border: none;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  cursor: pointer;
+  margin-left: 50px;
   
-  #header {
-    font: 15pt;
-    text-align: center;
-    padding: 1em 0em 1em 0em;
-    font-family: "Dosis", sans-serif;
-    letter-spacing: 0.2em;
-    padding-bottom: 0px;
-  }
-  
-  #query {
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    border-radius: 5px;
-    box-sizing: border-box;
-    text-indent: 1em;
-  }
-  
-  #button-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 2em;
-  }
-  
-  #button-search {
-    margin-right: 2em;
-    font-family: Dosis;
-    font-weight: bold;
-  }
-  
-  #random-article {
-  }
-  
-  #res {
-    justify-content: center;
-    display: table;
-    margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      padding-inline-start: 40px;
-  }
-  
-  #res #resultdiv {
-    background: #fff;
-    font-family: "Dosis", sans-serif;
-    font-weight: 100;
-    padding: 10px 45px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-      0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    display: inline-block;
-    margin: 20px;
-    border-bottom: 1px solid;
-    border-radius: 5px;
-    color: #777;
-    text-align: center;
-  }
-  
-  #resultdiv p{
-    color: black;
-  }
-  
-  
+}
+
+#submitBtn i {
+  color: #919191
+}
+
+#spontaneous {
+  display: block;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #919191;
+  transition-property: color;
+  transition-duration: 1s;
+  margin-left: -70px;
+}
+
+#spontaneous:hover {
+  color: #c8102e;
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+#searchResults {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding-left: 0;
+}
+
+#noResults {
+  color: #c8102e;
+  font-weight: 400;
+}
+
+.singleResult {
+  background: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 100;
+  padding: 0 45px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  display: inline-block;
+  margin: 10px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 6px;
+  color: #777;
+}
+
+.singleResult p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color:#919191;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ddd;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ddd;
+}
+
+.alert {
+  border-bottom: 3px solid #c8102e !important;
+  transition: border-bottom 0.5s ease;
+}
