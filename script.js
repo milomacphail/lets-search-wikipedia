@@ -2,7 +2,7 @@ var search = document.getElementById('search');
 var submitBtn = document.getElementById('submitBtn');
 var query = search.value;
 
-var api = "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=35&gsrsearch="
+var api = "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=15&gsrsearch="
 
 var url = ''; // Set url from outside addEventListener function
 
