@@ -13,7 +13,7 @@
 }
 
 
-@-webkit-keyframes shake {
+@-webkit-keyframes heartBeat {
     from,
     to {
         -webkit-transform: translate3d(0, 0, 0);
@@ -38,7 +38,7 @@
     }
 }
 
-@keyframes shake {
+@keyframes heartBeat {
     from,
     to {
         -webkit-transform: translate3d(0, 0, 0);
@@ -63,9 +63,9 @@
     }
 }
 
-.shake {
-    -webkit-animation-name: shake;
-    animation-name: shake;
+.heartbeat {
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
 }
 
 @-webkit-keyframes pulse {

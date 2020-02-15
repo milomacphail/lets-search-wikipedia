@@ -10,13 +10,13 @@ submitBtn.addEventListener('click', function (e) {
 
   $("#results").empty(); // Clear search results
 
-  e.preventDefault(); // Prevent default behavior of submit button
+  e.preventDefault();
 
   if (search.value === '') { // If search bar is empty
-    search.classList.add('animated', 'shake', 'alert'); // Add the alert class
+    search.classList.add('animated', 'heartbeat', 'alert'); // Add the alert class
 
     setTimeout(function () { // Remove alert after animation complete
-      search.classList.remove('animated', 'shake', 'alert');
+      search.classList.remove('animated', 'heartbeat', 'alert');
     }, 750);
   }
 
