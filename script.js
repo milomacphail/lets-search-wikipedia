@@ -14,9 +14,10 @@ submitBtn.addEventListener('click', function (e) {
 
   if (search.value === '') { // If search bar is empty
     search.classList.add('animated', 'heartbeat', 'alert'); // Add the alert class
-
+    
     setTimeout(function () { // Remove alert after animation complete
       search.classList.remove('animated', 'heartbeat', 'alert');
+
     }, 750);
   }
 
