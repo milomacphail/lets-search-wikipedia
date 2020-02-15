@@ -34,7 +34,7 @@ body {
   border-radius: 5px;
   background: transparent;
   margin: 20px auto;
-  transition: border-bottom 0.5s ease;
+  transition: border 0.5s ease;
 }
 
 @media screen and (max-width: 420px) {
