@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Let's Search Wikipedia Together</title>
-        <link rel="icon" href="/icon/wikIcon.ico" sizes="32x32">
-        <link rel="stylesheet" href="style.css" type="text/css" />
-        <link rel="stylesheet" href="animate.css" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let's Search Wikipedia Together</title>
+    <link rel="icon" href="/icon/wikIcon.ico" sizes="32x32">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="animate.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
 
-    <body>
-        <div class="container">
+<body>
+    <div class="container">
 
-            <form id="wikiSearch" class="wikiSearch">
-                <input id="search" type="text" autocomplete="off" name="search" placeholder="Search" />
-                <button id="submitBtn" type="submit"><i class="fas fa-angle-right fa-3x"></i></button>
-                <a id="spontaneous" target="_blank" href="https://en.wikipedia.org/wiki/Special:Random">How about something unexpected?</a>
-            </form>
-            <div>
-                <ul id="results">
-                    <div id="noResults" class="animated fadeInDown" style="display:none;">
-                        <h2>no results found!</h2>
-                    </div>
-                </ul>
-            </div>
+        <form id="wikiSearch" class="wikiSearch">
+            <input id="search" type="text" autocomplete="off" name="search" placeholder="What are you looking for?" />
+            <button id="submitBtn" type="submit"><i class="fas fa-angle-right fa-3x"></i></button>
+            <a id="spontaneous" target="_blank" href="https://en.wikipedia.org/wiki/Special:Random">How about something
+                unexpected?</a>
+        </form>
+        <div>
+            <ul id="results">
+                <div id="noResults" class="animated fadeInDown" style="display:none;">
+                    <h2>no results found!</h2>
+                </div>
+            </ul>
         </div>
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 
 </html>
